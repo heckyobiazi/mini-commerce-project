@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM EATS</title>
+
+    <link rel="stylesheet" href="home.css">
+
+
+</head>
+<body>
+    
+    <div class="Header">
+    <h2>DANNY EATRY<img src="DANNY-removebg-preview.png" alt="sam eat logo" style="width:15%; vertical-align: middle;"></h2>
+   <h1 class="home">HOME</h1>
+   <div class="drop">
+    <button class="dropbtn">
+        MENU 
+       <div class="dropdown-content">
+        <a href="home.html">Home</a>
+        <br>
+        <a href="produts.html">Products</a>
+        <br>
+        <a href="onlineshf.html">Online shopping form</a>
+        <br>
+        <a href="contact.html">Contact us</a>
+        </div>
+     </div>
+    </div>
+<h1 id="head-text">
+    <marquee behaviour="scroll" scrollamount="20">
+      <img src="lidye-1Shk_PkNkNw-unsplash-removebg-preview.png" class="mark-img">
+        WELCOME TO DANNY EATRY
+      <img src="lidye-1Shk_PkNkNw-unsplash-removebg-preview.png" class="mark-img">
+    </marquee>
+    </h1>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1</div>
+  <img src="armando-brenlha-EufUgeuCa7Y-unsplash.jpg" class="home-img">
+  <div class="text"><p>DANNY EATRY </p>
+  <p>North cyprus food </p></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2</div>
+  <img src="carissa-gan-RwoKbjJdYvE-unsplash.jpg" class="home-img">
+  <div class="text"><p>The best eatry in North Cyprus </p>
+  <p>We offer the best services and have the best meals at our eatry</p></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3</div>
+ <img src="davide-cantelli-jpkfc5_d-DI-unsplash.jpg" class="home-img">
+ <div class="text"><p>Over 50 different dishes </p>
+ <p>Having many local and International dishes and meals served and delivered </p></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4</div>
+ <img src="thomas-tucker-MNtag_eXMKw-unsplash.jpg" class="home-img">
+ <div class="text"><p>Delicious to satisfactory </p>
+ <p>You can't resist the meals, delicious to evry brim and ever so satisfactory for you</p></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5</div>
+ <img src="rachel-park-hrlvr2ZlUNk-unsplash.jpg" class="home-img">
+ <div class="text"><p>Delivery System </p>
+  <p>We deliver to every city in North Cyprus at the a fast speed to fill you up for goodness</p></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6</div>
+ <img src="carissa-gan-KSXvrqKUxnc-unsplash.jpg" class="home-img">
+ <div class="text"><p>We have Discounts and affordable price rates</p>
+  <p>You wont find cheao and delicious meals asides at DANNY EATRY, with alot of discounts for customers</p></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7</div>
+ <img src="anna-pelzer-IGfIGP5ONV0-unsplash (1).jpg" class="home-img">
+ <div class="text"><p>Order and join us </p>
+ <p>Order today, to experience the goodness and the best of meals from around the world.</p></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+
+    <div class="Footer">
+    <h4>© 2022 DANNY EATRY <a href="contact.html" style="float: right;"> contact us </a><h4>
+    <p id="crack"></p>
+    </div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+    
+
+
+</body>
+</html>

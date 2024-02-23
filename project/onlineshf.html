@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DANNY EATRY. Online shopping</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="product.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+</head>
+<body>
+
+    <div class="Header">
+        <h2>DANNY EATRY<img src="DANNY-removebg-preview.png "alt="sam eat logo" style="width:15%; vertical-align: middle;"></h2>
+       <h1 class="home">ONLINE SHOPPING FORM</h1>
+       <div class="drop">
+        <button class="dropbtn">
+            MENU 
+         </button>
+            <div class="dropdown-content">
+            <a href="home.html">Home</a>
+            <br>
+            <a href="produts.html">Products</a>
+            <br>
+            <a href="onlineshf.html">Online shopping form</a>
+            <br>
+            <a href="contact.html">Contact us</a>
+           </div>
+         </div>
+        </div> 
+
+<section>
+<div>
+    <p style="color:white;">Please select the food you wish to purchase </p>
+    <p><select id="options">
+    <option value="1">Jollof rice</option>
+    <option value="2">fried rice</option>
+    <option value="3">pilov rice</option>
+    <option value="4">stew rice</option>
+    <option value="5">chicken</option>
+    <option value="6">beef</option>
+    <option value="7">gizzard</option></p>
+    <option value="8">plantain</option>
+    </select>
+
+    <button onclick="addOption()" style="background-color: blue; color:white;">Add to Table</button>
+    <button onclick="TotalCalculation()" style="background-color: blue; color:white;">Calculate Total</button>
+</div>
+
+</section>
+
+
+<section class="shopping">
+                <div class="tab">
+               <table id="table">
+                       <thead>
+                    <tr class="table-name">
+                        <td class="foodname">FOODS</td>
+                        <td class="quantitypro">QUANTITY</td>
+                        <td class="totalcal">TOTAL</td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                 <div class="tableau">
+
+                <tr>
+                    <td></td>
+                    <td>TOTAL</td>
+                    <td id="totalprice">$0</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>VAT(15%)</td>
+                    <td id="vatprice">$0</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>GRANDTOTAL</td>
+                    <td id="grandprice">$0</td>
+                </tr>
+                </div>
+                </tbody>
+
+                </table>
+                </div>
+        </section>
+       
+
+        <script src="main.js">
+
+        </script>
+
+
+        <div class="Footer">
+            <h4>© 2022 DANNY EATRY <a href="contact.html" style="float: right;"> contact us </a></h4>
+            <p id="crack"></p>
+        </div>
+            
+</body>
+</html>

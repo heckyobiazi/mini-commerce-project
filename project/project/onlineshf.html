@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam Eats. Online shopping</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="product.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+</head>
+<body>
+
+    <div class="Header">
+        <h2>SAM EATS<img src="Layer0.png" alt="sam eat logo" style="width:20%; vertical-align: middle;"></h2>
+       <h1>ONLINE SHOPPING FORM</h1>
+       <div class="drop">
+        <button class="dropbtn">
+            MENU 
+           <div class="dropdown-content">
+            <a href="home.html">Home</a>
+            <br>
+            <a href="produts.html">Products</a>
+            <br>
+            <a href="onlineshf.html">Online shopping form</a>
+            <br>
+            <a href="contact.html">Contact us</a>
+           </div>
+         </div>
+         <button type="button" class='bx bxs-shopping-bag add-cart' id="cart-icons">OPEN CART</button>
+        </div> 
+
+        <section class="shopping">
+            <div class="cart">
+<div class="cart-title">
+   <h2>Your Cart</h2>
+
+   <div class="cart-content">
+    
+   </div>
+
+   <div class="total">
+    <div class="total-title">Total</div>
+    <div class="total-price">$0</div>
+    <button type="button" class="btn-buy">Checkout</button><i class='bx bx-x' id="close-cart"></i>
+    <div class="alltotal-title">Total Order</div>
+    <div class="alltotal-price">$0</div>
+</div>
+
+</div>
+<div class="pay-cart">
+    <hr>
+    <table>
+        <tr>
+            <td><input type = "radio" id="rads">Visa</td><td><input type = "radio" id="rads2">Mastercard</td>
+        </tr>
+        <tr>
+            <td><label for=" ">Name on the card</label></td><td><input type="text" id="cardname" maxlength="15" required><input type="text" id="cardname" maxlength="15" required><input type="text" id="cardname" maxlength="15" required><input type="text" id="cardname" maxlength="15" required></td>
+        </tr>
+    <tr>
+        <td><label for="">Expiry Date</label></td>
+        <td><select>
+            <option>01</option>
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+        </select></td>
+        <td><select>
+            <opption>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+            </select></td>
+    <tr>
+        <td><label for="">CVV</label></td>
+        <td><input type="text" id="cvv" maxlength="3" required></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="item">Items</td>
+        <td class="alltotal-price">Total</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="item">x</td>
+        <td class="alltotal-price">$0</td>
+    </tr>
+   <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><button id="emptybtn" onclick="removeall()">Empty Cart</button></td>
+    <td><button id="payall"  onclick="paid()">Pay</button></td>
+   </tr>
+   </table>
+</div>
+</div>
+            
+       
+    
+</section>
+<section class="shopping">
+            <div class="shop-list">
+                <div class="product-boxes">
+                    <img src="jollof rice.jfif" class="product-img"><img src="fannta0.png" class="property-img">
+                    <h2 class="product-title">Jollof Rice</h2><h2 class="pro-name">fanta</h2>
+                    <p class="price">$40</p>
+                    <div class="prop">
+                       <button type="button" class="property">Property</button>
+                     <div class="propertydrop" value="0">
+      <select onchange="handleSelectionChange(this)">
+            <option id="fan" value="1">Fanta</option>
+            <option id="cok" value="2">Coke</option>
+            <option id="spri" value="3">Sprite</option>
+        </select>
+                    </div> 
+                    </div>
+                    <button type="button" class='bx bxs-shopping-bag add-cart'>Add to cart</button>
+                </div>
+
+                <div class="product-boxes">
+                    <img src="fried rice.jfif" class="product-img"><img src="fannta0.png" class="property-img">
+                    <h2 class="product-title">Fried Rice</h2><h2 class="pro-name">fanta</h2>
+                    <span class="price">$40</span>
+                    <div class="prop">
+                        <button type="button" class="property" >Property</button>
+                        <div class="propertydrop" value="1">
+     <select onchange="handleSelectionChange(this)">
+            <option id="fan" value="1">Fanta</option>
+            <option id="cok" value="2">Coke</option>
+            <option id="spri" value="3">Sprite</option>
+        </select>
+                                </select>
+                        </div> 
+                     </div>
+                 <button type="button" class='bx bxs-shopping-bag add-cart'>Add to cart</button>
+                </div>
+                <div class="product-boxes">
+                    <img src="pilaf.jfif" class="product-img"><img src="fannta0.png" class="property-img">
+                    <h2 class="product-title">Pilov Rice</h2><h2 class="pro-name">fanta</h2>
+                    <span class="price">$40</span>
+                    <div class="prop">
+                        <button type="button" class="property">Property</button>
+                        <div class="propertydrop" value="2">
+                       <select onchange="handleSelectionChange(this)">
+            <option id="fan" value="1">Fanta</option>
+            <option id="cok" value="2">Coke</option>
+            <option id="spri" value="3">Sprite</option>
+        </select>
+                           </div>
+                     </div>
+                     <button type="button" class='bx bxs-shopping-bag add-cart'>Add to cart</button>
+                </div>
+                <div class="product-boxes">
+                    <img src="rs.jfif" class="product-img"><img src="fannta0.png" class="property-img">
+                    <h2 class="product-title">Rice and stew</h2><h2 class="pro-name">fanta</h2>
+                    <span class="price">$40</span>
+                    <div class="prop">
+                        <button type="button" class="property">Property</button>
+                        <div class="propertydrop" value="3">
+<select onchange="handleSelectionChange(this)">
+            <option id="fan" value="1">Fanta</option>
+            <option id="cok" value="2">Coke</option>
+            <option id="spri" value="3">Sprite</option>
+        </select>
+                        </div> 
+                     </div>
+                    
+               
+                     <button type="button" class='bx bxs-shopping-bag add-cart'>Add to cart</button>
+                </div>
+                <div class="product-boxes">
+                    <img src="chicken.jfif" class="product-img"><img src="fannta0.png" class="property-img">
+                    <h2 class="product-title">Chicken</h2><h2 class="pro-name">fanta</h2>
+                    <span class="price">$40</span>
+                    <div class="prop">
+                        <button type="button" class="property">Property</button>
+                        <div class="propertydrop" value="4">
+                            <select onchange="handleSelectionChange(this)">
+            <option id="fan" value="1">Fanta</option>
+            <option id="cok" value="2">Coke</option>
+            <option id="spri" value="3">Sprite</option>
+        </select>
+                        </div> 
+                     </div>
+                     <button type="button" class='bx bxs-shopping-bag add-cart'>Add to cart</button>
+                </div>
+                <div class="product-boxes">
+                    <img src="beef.jfif" class="product-img"><img src="fannta0.png" class="property-img">
+                    <h2 class="product-title">Beef</h2><h2 class="pro-name">fanta</h2>
+                    <span class="price">$40</span>
+                    <div class="prop">
+                        <button type="button"class="property">Property</button>
+                        <div class="propertydrop" value="5">
+             <select onchange="handleSelectionChange(this)">
+            <option id="fan" value="1">Fanta</option>
+            <option id="cok" value="2">Coke</option>
+            <option id="spri" value="3">Sprite</option>
+        </select>
+                        </div> 
+                     </div>
+                     <button type="button" class='bx bxs-shopping-bag add-cart'>Add to cart</button>
+                </div>
+                <div class="product-boxes">
+                    <img src="gizzard.jfif" class="product-img"><img src="fannta0.png" class="property-img">
+                    <h2 class="product-title">Gizzard</h2><h2 class="pro-name">fanta</h2>
+                    <span class="price">$25</span>
+                    <div class="prop">
+                        <button type="button" class="property">Property</button>
+                        <div class="propertydrop" value="6">
+                          <select onchange="handleSelectionChange(this)">
+            <option id="fan" value="1">Fanta</option>
+            <option id="cok" value="2">Coke</option>
+            <option id="spri" value="3">Sprite</option>
+        </select>
+                        </div> 
+                     </div>
+                     <button type="button" class='bx bxs-shopping-bag add-cart'>Add to cart</button>
+                </div>
+                <div class="product-boxes">
+                    <img src="plantain.jfif" class="product-img"><img src="fannta0.png" class="property-img">
+                    <h2 class="product-title">Plantain</h2><h2 class="pro-name">fanta</h2>
+                    <span class="price">$40</span>
+                    <div class="prop">
+                        <button type="button" class="property">Property</button>
+                        <div class="propertydrop" value="7">
+                            <select onchange="handleSelectionChange(this)">
+            <option id="fan" value="1">Fanta</option>
+            <option id="cok" value="2">Coke</option>
+            <option id="spri" value="3">Sprite</option>
+        </select>
+                        </div> 
+                     </div>
+                    <button type="button" class='bx bxs-shopping-bag add-cart'>Add to cart</button>
+                            </div>
+                <div class="product-boxes">
+                    <img src="kebab.jfif" class="product-img"><img src="fannta0.png" class="property-img">
+                    <h2 class="product-title">Kebab</h2><h2 class="pro-name">fanta</h2>
+                    <span class="price">$40</span>
+                    <div class="prop">
+                        <button type="button" class="property" >Property</button>
+                        <div class="propertydrop" value="8">
+                           <select onchange="handleSelectionChange(this)">
+            <option id="fan" value="1">Fanta</option>
+            <option id="cok" value="2">Coke</option>
+            <option id="spri" value="3">Sprite</option>
+        </select>
+                        </div> 
+                     </div>
+                     <button type="button" class='bx bxs-shopping-bag add-cart'>Add to cart</button>
+                </div>
+                <div class="product-boxes">
+                    <img src="pizza.jfif" class="product-img"><img src="fannta0.png" class="property-img">
+                    <h2 class="product-title">Pizza<br></h2><h2 class="pro-name">fanta</h2>
+                    <span class="price">$40</span>
+                    <div class="prop">
+                        <button type="button" class="property">Property</button>
+                        <div class="propertydrop" value="9">
+ 
+        <select onchange="handleSelectionChange(this)">
+            <option id="fan" value="1">Fanta</option>
+            <option id="cok" value="2">Coke</option>
+            <option id="spri" value="3">Sprite</option>
+        </select>
+                        </div> 
+                     </div>
+                     <button type="button" class='bx bxs-shopping-bag add-cart'>Add to cart</button>
+                </div>
+                <div class="product-boxes">
+                    <img src="sharwama.jfif" class="product-img"><img src="fannta0.png" class="property-img">
+                    <h2 class="product-title">Sharwarma</h2><h2 class="pro-name">fanta</h2>
+                    <span class="price">$40</span>
+                    <div class="prop">
+                        <button type="button" class="property" >Property</button>
+                        <div class="propertydrop" value="10">
+                       <select onchange="handleSelectionChange(this)">
+            <option id="fan" value="1">Fanta</option>
+            <option id="cok" value="2">Coke</option>
+            <option id="spri" value="3">Sprite</option>
+        </select>
+                        </div> 
+                     </div>
+                     <button type="button" class='bx bxs-shopping-bag add-cart'>Add to cart</button>
+                </div>
+                <div class="product-boxes">
+                    <img src="burger.jfif" class="product-img"><img src="fannta0.png" class="property-img">
+                    <h2 class="product-title">Burger</h2><h2 class="pro-name">fanta</h2>
+                    <span class="price">$30</span>
+                    <div class="prop">
+                        <button type="button" class="property" >Property</button>
+                        <div class="propertydrop" value="11">
+                            <select onchange="handleSelectionChange(this)">
+            <option id="fan" value="1">Fanta</option>
+            <option id="cok" value="2">Coke</option>
+            <option id="spri" value="3">Sprite</option>
+        </select>
+                        </div> 
+                     </div>
+                     <button type="button" class='bx bxs-shopping-bag add-cart'>Add to cart</button>
+                </div>
+            </div>
+        </section>
+       
+
+        <script src="main.js">
+
+        </script>
+
+
+        <div class="Footer">
+            <h4>© 2022 SAM EATS <a href="contact.html" style="float: right;"> contact us </a></h4>
+            <p id="crack"></p>
+        </div>
+            
+</body>
+</html>

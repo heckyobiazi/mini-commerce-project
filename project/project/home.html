@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM EATS</title>
+
+    <link rel="stylesheet" href="home.css">
+
+
+</head>
+<body>
+    
+    <div class="Header">
+    <h2>SAM EATS<img src="Layer0.png" alt="sam eat logo" style="width:10%; vertical-align: middle;"></h2>
+   <h1>HOME</h1>
+   <div class="drop">
+    <button class="dropbtn">
+        MENU 
+       <div class="dropdown-content">
+        <a href="home.html">Home</a>
+        <br>
+        <a href="produts.html">Products</a>
+        <br>
+        <a href="onlineshf.html">Online shopping form</a>
+        <br>
+        <a href="contact.html">Contact us</a>
+        </div>
+     </div>
+    </div>
+<h1 id="head-text">
+    <marquee behaviour="scroll" scrollamount="20">
+        WELCOME TO SAM EATS
+    </marquee>
+    </h1>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="foodimg1.jpeg.jpg" class="home-img">
+  <div class="text">North cyprus food delivery </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="foodimag2.png" class="home-img">
+  <div class="text">Covering the whole city</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+ <img src="foodimag3.png" class="home-img">
+  <div class="text">International Meals</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+ <img src="foodimag.png" class="home-img">
+  <div class="text"> Meals</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+ <img src="foodimag5.png" class="home-img">
+  <div class="text">as well as i rembeer</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+    <div class="Footer">
+    <h4>© 2022 SAM EATS <a href="contact.html" style="float: right;"> contact us </a><h4>
+    <p id="crack"></p>
+    </div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+    
+
+
+</body>
+</html>
